@@ -1,25 +1,12 @@
-package main
+package Temperature
 
 import (
-	"bufio"   // bufio is used for buffered I/O
-	"fmt"     //fmt for formatted I/O,
+	"fmt" //fmt for formatted I/O,
 
 	"strconv" //strconv for string conversions.
 )
-func main(){
 
-	fmt.Println("Temperature Converter from Celsius to Fahrenheit:")
-	
-}
-
-
-func temperatureConverter() {
-	
-	// Read temperature in Celsius from user
-	fmt.Print("Enter temperature in Celsius: ")
-	reader := bufio.NewReader(os.Stdin)              // taking input from the user using bufio
-	temperatureInput := reader.ReadString('\n') // it reads the line until the newline is encoundtered, err is used to discard the error returned by ReadString for simplicity.
-	}
+func temperatureConverter(temperatureInput string) {
 
 	// Convert input to float
 	temperatureCelsius, err := strconv.ParseFloat(temperatureInput[:len(temperatureInput)-1], 64)
@@ -35,5 +22,4 @@ func temperatureConverter() {
 
 	// Print the result with 2 decimal places
 	fmt.Printf("Temperature in Fahrenheit: %.2f\n", temperatureFahrenheit)
-	return temperatureFahrenheit
 }

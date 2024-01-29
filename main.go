@@ -50,9 +50,10 @@ func isPrime(n int) {
 
 		if n%i == 0 {
 			fmt.Println("it is a prime number")
-		} else{ fmt.Println("it is not a prime number")}
+		} else {
+			fmt.Println("it is not a prime number")
+		}
 	}
-
 
 }
 
@@ -136,7 +137,7 @@ func isLeapYear(year int) {
 
 func main() {
 
-	fmt.Println("Kindly enter the input value")
+	fmt.Println("Kindly enter the input value to create fibonacci series")
 	var input string
 	fmt.Scanln(&input)
 	// Convert the input to an integer
